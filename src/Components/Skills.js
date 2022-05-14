@@ -79,6 +79,9 @@ function Skills() {
                         <SkillItem src={vsc}>
                             VSCode
                         </SkillItem>
+                        <SkillIcon class='bi bi-github'>
+                            GitHub
+                        </SkillIcon>
                     </HStackPanel>
 
                 </div>
