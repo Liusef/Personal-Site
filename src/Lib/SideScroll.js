@@ -6,7 +6,8 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/bundle';
 
-const SSIWidth = '335px'
+const SSIWidth = '350px'
+const MaxSSIWidth = '80vw'
 const SSIHeight = '500px'
 const SSIBorderRad = '8px'
 const imgHeight = '200px';
@@ -14,7 +15,7 @@ const textMargin = '24px';
 
 const SSIImg = styled.img`
   width: ${SSIWidth};
-  max-width: 80vw;
+  max-width: ${MaxSSIWidth};
   height: ${imgHeight};
   object-fit: cover;
   background-color: #1a1a1a;
@@ -24,7 +25,7 @@ const SSIImg = styled.img`
 const SSIDiv = styled.div`
   background-color: #333333;
   width: ${SSIWidth};
-  max-width: 80vw;
+  max-width: ${MaxSSIWidth};
   height: ${SSIHeight};
   display: flex;
   flex-direction: column;
@@ -66,13 +67,16 @@ const SSLHContainer = styled.div`
   .swiper-scrollbar-drag {
     background-color: #ffffffaa;
   }
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
 `;
 
 class SSList extends React.Component {
 
     render() {
         const children = React.Children.map(this.props.children, (c) => (
-            <SwiperSlide style={{width: SSIWidth, maxWidth: '100vw'}}>
+            <SwiperSlide style={{width: SSIWidth, maxWidth: MaxSSIWidth}}>
                 {c}
             </SwiperSlide>
         ));
@@ -80,11 +84,14 @@ class SSList extends React.Component {
         return(
             <SSLHContainer>
                 <Swiper modules={children.length > 1 ? [Navigation, Pagination, Scrollbar] : []}
-                        spaceBetween={children.length > 1 ? 50 : 0}
+                        spaceBetween={32}
                         slidesPerView='auto'
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                         navigation={g1}
+                        pagination={{
+                            clickable: true
+                        }}
                         // scrollbar={g1 ? {
                         //     draggable: true
                         // } : false}
