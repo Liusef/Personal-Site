@@ -17,7 +17,7 @@ const TitleBar = styled.div`
   align-items: center;
   width: 100%;
   position: fixed;
-  background-color: #000000cc;
+  background-color: #000000aa;
   backdrop-filter: blur(4px);
   z-index: 999;
 `;

@@ -28,7 +28,7 @@ function Education() {
                 <SSItem img={ucb} title="UC Berkeley" sub='Berkeley, CA'>
                     Attended Berkeley for the 2020 Summer Session. Took CS 61BL Data Structures and Algorithms.
 
-                    <p style={{marginBottom: 0}}> Letters and Sciences Undeclared </p>
+                    <p style={{marginBottom: 0}}> Letters & Sciences Undeclared </p>
                     <p style={{margin: 0}}> GPA: 4.0  </p>
 
                     <IconLink class='bi bi-book' href='https://berkeley.edu/'>

@@ -6,6 +6,7 @@ import gitlet from '../Assets/proj/gitlet.png';
 import stats from '../Assets/proj/stats.png';
 import gba from '../Assets/proj/gba.png';
 import meetinglauncher from '../Assets/proj/meetinglauncher.png'
+import goat from '../Assets/proj/goat.png'
 
 function Project() {
     return (
@@ -27,6 +28,20 @@ function Project() {
                     A simple platforming game for the Gameboy Advance. Written in C and uses MMIO to draw to the display and read user input.
                     <IconLink class='bi bi-github' href='https://github.com/Liusef/Gameboy-JumpingCat'>
                         GitHub Repo
+                    </IconLink>
+                </SSItem>
+
+                <SSItem img={goat} title="Dance Goat Dance" sub='Mar 2022'>
+                    An interactive, educational, and fun website all about Goats! Submission for Hexlabs Horizons 2022.
+                    Won the Creativity Award.
+                    <IconLink class='bi bi-globe' href='http://dance.goat.dance/'>
+                        Goat Website
+                    </IconLink>
+                    <IconLink class='bi bi-github' href='https://github.com/ZenithO-o/GOAT-WEBSITE'>
+                        GitHub Repo
+                    </IconLink>
+                    <IconLink class='bi bi-book' href='https://devpost.com/software/goat-sauce-educational-website'>
+                        Devpost Submission
                     </IconLink>
                 </SSItem>
 

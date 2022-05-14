@@ -3,6 +3,7 @@ import {SSItem, SSList} from "../Lib/SideScroll";
 import styled from "styled-components";
 import eb from '../Assets/exp/eb.jpg'
 import lrt from '../Assets/exp/lrt.png'
+import thing from '../Assets/exp/thing.jpg'
 
 function Experience() {
     return(
@@ -32,6 +33,12 @@ function Experience() {
                         Lynbrook Robotics Website
                     </IconLink>
 
+                </SSItem>
+
+                <SSItem img={thing} title="Illustrator" sub="Freelance">
+                    Utilizing creativity software such as Adobe Photoshop, CLIP Studio Paint, Procreate,
+                    Adobe Substance 3D Painter, and Unity to create art. Gained experience with business operation
+                    and working with clients.
                 </SSItem>
 
             </SSList>

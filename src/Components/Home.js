@@ -1,5 +1,8 @@
 import { H1, BodyDiv, TopDiv, HStackPanel, VStackPanel, Icon } from "../Lib/Comps";
+import styled from "styled-components";
 import Socials from "./Socials";
+import dotmatrix from "../Assets/dotmatrix.png"
+import bg1 from "../Assets/bg1.jpg"
 
 const title =
     "I'm Joseph"
@@ -14,13 +17,25 @@ function TopDivSpacer() {
     );
 }
 
+const HomeVStackPanel = styled(VStackPanel)`
+  width: 100vw;
+  background-image: url(${bg1});
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media only screen and (max-device-width: 700px) {
+    background-attachment: scroll;
+  }
+`
+
 function Home() {
     return (
-        <VStackPanel id='home'>
-            <div style={{backgroundColor: 'black', color: 'white'}}>
+        <HomeVStackPanel id='home'>
+            <div style={{color: 'white'}}>
                 <TopDiv>
                     <HStackPanel style={{height: '80vh', alignItems: 'center', marginBottom: '3em'}}>
-                        <TopDivSpacer/>
+                        <TopDivSpacer />
                         <VStackPanel style={{gap: '1rem'}}>
                             <H1 style={{margin: '0'}}>
                                 {title}
@@ -30,10 +45,10 @@ function Home() {
                             </p>
                         </VStackPanel>
                     </HStackPanel>
-                    <Socials/>
+                    {Socials(true)}
                 </TopDiv>
             </div>
-        </VStackPanel>
+        </HomeVStackPanel>
     );
 }
 

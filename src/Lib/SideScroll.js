@@ -6,7 +6,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/bundle';
 
-const SSIWidth = '350px'
+const SSIWidth = '340px'
 const MaxSSIWidth = '80vw'
 const SSIHeight = '500px'
 const SSIBorderRad = '8px'

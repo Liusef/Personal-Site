@@ -37,7 +37,7 @@ const H3 = styled.p`
 `;
 
 const BodyDiv = styled.div`
-  padding: 8vh 10vw;
+  padding: 5vh 10vw;
 `
 
 const TopDiv = styled(BodyDiv)`

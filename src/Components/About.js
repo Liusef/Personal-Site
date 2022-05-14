@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 function About() {
     return (
-        <div style={{backgroundColor: '#222222'}} id='about'>
+        <div style={{backgroundColor: '#222222', padding: '3em 0'}} id='about'>
             <BodyDiv>
                 <H2 style={{margin: 0}}>
                    About Me
